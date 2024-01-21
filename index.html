@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Animaux</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .fcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="cards1">
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+                <div class="col" id="CHAT">
+                  <div class="card shadow-sm gradient-background" onclick="playAudioChat()">
+                    <script>
+                        function playAudioChat() {
+                          var audioChat = new Audio('assets/chat.m4a');
+                          audioChat.play();
+                        }
+                      </script>
+                    <img src="assets/cat.png" height="250" > 
+                    <div class="card-body">
+                      <h2 class="card-text text-center">CHAT</h2>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" id="CHIEN">
+                  <div class="card shadow-sm gradient-background" onclick="playAudioChien()">
+                    <script>
+                        function playAudioChien() {
+                          var audioChien = new Audio('assets/Chien.m4a');
+                          audioChien.play();
+                        }
+                      </script>
+                    <img src="assets/Dog.png" height="250" > 
+                    <div class="card-body">
+                        <h2 class="card-text text-center">CHIEN</h2>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" id="LAPIN">
+                    <div class="card shadow-sm gradient-background" onclick="playAudioLapin()">
+                        <script>function playAudioLapin() {
+                            var audioLapin = new Audio('assets/Lapin.m4a');
+                            audioLapin.play();
+                          }</script> 
+                      <img src="assets/Rabbit.png" height="250" > 
+                      <div class="card-body">
+                          <h2 class="card-text text-center">LAPIN</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col" id="OISEAU">
+                    <div class="card shadow-sm gradient-background" onclick="playAudioOiseau()">
+                        <script>function playAudioOiseau() {
+                            var audioOiseau = new Audio('assets/Oiseau.m4a');
+                            audioOiseau.play();
+                          }</script> 
+                      <img src="assets/Bird.png" height="250" > 
+                      <div class="card-body">
+                          <h2 class="card-text text-center">OISEAU</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" id="LION">
+                    <div class="card shadow-sm gradient-background" onclick="playAudioLion()">
+                        <script>function playAudioLion() {
+                            var audioLion = new Audio('assets/Lion.m4a');
+                            audioLion.play();
+                          }</script> 
+                      <img src="assets/Lion.png" height="250" > 
+                      <div class="card-body">
+                          <h2 class="card-text text-center">LION</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" id="OURS" onclick="playAudioOurs()">
+                    <script>function playAudioOurs() {
+                        var audioOurs = new Audio('assets/Ours.m4a');
+                        audioOurs.play();
+                      }</script> 
+                    <div class="card shadow-sm gradient-background">
+                      <img src="assets/Bear.png" height="250" > 
+                      <div class="card-body">
+                          <h2 class="card-text text-center">OURS</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col" id="CHEVAL">
+                    <div class="card shadow-sm gradient-background" onclick="playAudioCheval()">
+                        <script>function playAudioCheval() {
+                            var audioCheval = new Audio('assets/Cheval.m4a');
+                            audioCheval.play();
+                          }</script> 
+                      <img src="assets/Horse.png" height="250" > 
+                      <div class="card-body">
+                          <h2 class="card-text text-center">CHEVAL </h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" id="MOUTON">
+                    <div class="card shadow-sm gradient-background" onclick="playAudioMouton()">
+                        <script>function playAudioMouton() {
+                            var audioMouton = new Audio('assets/Mouton.m4a');
+                            audioMouton.play();
+                          }</script> 
+                      <img src="assets/Sheep.png" height="250" > 
+                      <div class="card-body">
+                          <h2 class="card-text text-center">MOUTON</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" id="COCHON">
+                    <div class="card shadow-sm gradient-background" onclick="playAudioCochon()">
+                        <script>function playAudioCochon() {
+                            var audioCochon = new Audio('assets/Cochon.m4a');
+                            audioCochon.play();
+                          }</script> 
+                      <img src="assets/Pig.png" height="250" > 
+                      <div class="card-body">
+                          <h2 class="card-text text-center">COCHON</h2>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
